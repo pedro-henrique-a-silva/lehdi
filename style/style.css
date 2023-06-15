@@ -234,6 +234,7 @@ button.key-enter:active::after {
   border-left: 2px solid black;
   right: -2px;
 }
+
 button.key-enter:active {
   border-top: 2px solid black;
   border-right: 2px solid black;
