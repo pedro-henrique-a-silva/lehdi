@@ -16,13 +16,12 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  width: 50%;
-  /* border: 1px solid red; */
-  margin: 50px auto;
+  width: 60%;
+  margin: 0 auto;
   padding: 10px;
 
   & section {
-    width: 90%;
+    width: 96%;
   }
 }
 
@@ -32,6 +31,8 @@ header {
   align-items: center;
   border: 2px solid white;
   color: white;
+  margin-bottom: 20px;
+  min-width: 760px;
 
   & .repeat-button {
     margin: 0 20px;
@@ -52,11 +53,11 @@ header {
   align-items: center;
   background-color: #4C4347;
   color: white;
-  /* border: 1px solid red; */
   font-size: 20px;
+  min-width: 760px;
 
   & .letter-group {
-    padding: 10px 15px;
+    padding: 5px 15px;
   }
 
   & .letter {
@@ -70,6 +71,8 @@ header {
   /* border: 1px solid red; */
   color: white;
   padding: 10px;
+  margin-bottom: 20px;
+  min-width: 760px;
 
   & .status {
     border-left: 1px solid white;
@@ -105,17 +108,24 @@ header {
 
 
 .Keyboard-section {
-  /* border: 1px solid red; */
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-width: 760px;
 
   & .keyboard-line {
     display: flex;
+    margin-bottom: 5px;
+    /* justify-content: flex-start; */
+  }
+  & div {
+    align-self: flex-start;
   }
 
   & .key {
+    position: relative;
     outline: none;
     background-color: #4C4347;
     font-size: 1em;
@@ -128,5 +138,81 @@ header {
     cursor: pointer;
     border: none;
     color: #FAFAFF;
+  }
+
+  & .key-capslock {
+    width: 90px;
+  }
+
+  & .key-tab {
+    width: 60px;
+  }
+
+  & .key-l-shift {
+    width: 75px;
+  }
+
+  & .key-l-ctrl {
+    width: 89px;
+  }
+  & .key-alt {
+    width: 85px;
+  }
+  & .key-space {
+    width: 315px;
+  }
+
+  & .key-altgr {
+    width: 109px;
+  }
+
+  & .key-r-ctrl {
+    width: 112px;
+  }
+
+  & .key-enter {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 83px;
+  }
+
+  & .key-enter::after {
+    content: '';
+    position: absolute;
+    top: 29px;
+    right: 0px;
+    height: 55px;
+    width: 53px;
+    border-radius: 15%;
+    background-color: #4C4347;
+  }
+  & .key-backspace {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+  }
+  & .key-r-shift {
+    position: absolute;
+    top: 135px;
+    right: 0;
+    width: 115px;
+  }
+
+  & .key-maior::after {
+    content: '>';
+    position: absolute;
+    top: -10px;
+    font-size: 11px;
+    left: 8px;
+  }
+
+  & .key-menor::after {
+    content: '<';
+    position: absolute;
+    top: -10px;
+    font-size: 11px;
+    left: 8px;
   }
 }
