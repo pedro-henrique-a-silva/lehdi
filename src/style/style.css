@@ -24,29 +24,3 @@ header {
     width: 96%;
   }
 }
-
-.active {
-  border-bottom: 2px solid black !important;
-  border-left: 1px solid black !important;
-  line-height: 30px !important;
-}
-
-button.key-enter:active::after {
-  border-bottom: 2px solid black;
-  border-right: 2px solid black;
-  border-left: 2px solid black;
-  right: -2px;
-}
-
-button.key-enter:active {
-  border-top: 2px solid black;
-  border-right: 2px solid black;
-  border-left: 2px solid black;
-  line-height: 32px;
-}
-
-.button-disabled {
-  cursor: not-allowed;
-  pointer-events: none;
-  opacity: 0.5;
-}

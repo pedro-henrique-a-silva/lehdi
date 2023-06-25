@@ -1,3 +1,4 @@
+import './style/hand.css';
 import './style/keyboard.css';
 import './style/letterBoard.css';
 import './style/navPhase.css';
