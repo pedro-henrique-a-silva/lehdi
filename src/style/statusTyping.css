@@ -1,0 +1,39 @@
+.status-typing {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  min-width: 760px;
+
+  & .status {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 0 5px;
+  }
+
+  & .hand {
+    width: 10%;
+  }
+
+  & .metrics {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+  }
+
+  & .tpm {
+    width: 10%;
+  }
+
+  & .phase {
+    width: 25%;
+  }
+
+  & .status-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,17 @@
+.letter-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4C4347;
+  color: white;
+  font-size: 20px;
+  min-width: 760px;
+
+  & .letter-group {
+    padding: 5px 15px;
+  }
+
+  & .letter {
+    padding: 0 2px;
+  }
+}

@@ -1,0 +1,98 @@
+.Keyboard-section {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 760px;
+
+  & .keyboard-line {
+    display: flex;
+    margin-bottom: 10px;
+    /* justify-content: flex-start; */
+  }
+  & div {
+    align-self: flex-start;
+  }
+
+  & button {
+    position: relative;
+    outline: none;
+    background-color: #4C4347;
+    font-size: 1em;
+    line-height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    border-radius: 15%;
+    font-weight: 500;
+    box-shadow: 0px 0px 5px 2px #333;
+    cursor: pointer;
+    border: none;
+    color: #FAFAFF;
+  }
+
+  & .key-capslock {
+    width: 90px;
+  }
+
+  & .key-tab {
+    width: 60px;
+  }
+
+  & .key-l-shift {
+    width: 75px;
+  }
+
+  & .key-l-ctrl {
+    width: 89px;
+  }
+  & .key-alt {
+    width: 85px;
+  }
+  & .key-space {
+    width: 315px;
+  }
+
+  & .key-altgr {
+    width: 109px;
+  }
+
+  & .key-r-ctrl {
+    width: 112px;
+  }
+
+  & .key-enter {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 81px;
+    border-radius: 2px 2px 0px 8px;
+    box-shadow: 0px 0px 5px 2px #333;
+  }
+
+  & .key-enter::after {
+    content: '';
+    position: absolute;
+    top: 29px;
+    right: 0px;
+    height: 58px;
+    width: 51px;
+    border-radius: 15%;
+    border-radius: 0 2px 2px 2px;
+    box-shadow: 0px 3px 5px 1px #333;
+    background-color: #4C4347;
+  }
+  & .key-backspace {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+  }
+  & .key-r-shift {
+    position: absolute;
+    top: 149px;
+    right: 0;
+    width: 115px;
+  }
+
+}
