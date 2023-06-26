@@ -7,8 +7,12 @@
   font-size: 20px;
   min-width: 760px;
 
-  & .letter-group {
+  & .letter-row {
     padding: 5px 15px;
+  }
+
+  & .letter-group {
+    margin: 0 5px;
   }
 
   & .letter {

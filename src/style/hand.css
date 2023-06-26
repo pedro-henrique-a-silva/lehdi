@@ -6,3 +6,11 @@
 .open-hand {
   width: 30px;
 }
+
+.left-hand {
+  transform: rotateY(180deg);
+}
+
+.change-png-color {
+  filter: invert(100%);
+}
