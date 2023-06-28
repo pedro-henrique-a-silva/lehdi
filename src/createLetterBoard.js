@@ -9,18 +9,24 @@ const createLetterGroupEl = (arrayOfLetter) => {
     return letterEl;
   })
     .reduce((letterGroupEL, letterEl) => {
-      letterGroupEL.appendChild(letterEl);
+      letterGroupEL += letterEl.outerHTML;
       return letterGroupEL;
-    }, spanLetterGroup);
+    }, '');
 };
 
-const createletterRowEl = (arrayOfWord) => {
+const createletterRowEl = (arrayOfWord, rowID) => {
   const paragraphLetterRow = document.createElement('p');
+  paragraphLetterRow.id = `row-${rowID}`;
   paragraphLetterRow.classList.add('letter-row');
 
   return arrayOfWord.map((word) => createLetterGroupEl(word.split('')))
     .reduce((rowEL, wordEl) => {
-      rowEL.appendChild(wordEl);
+      const letterSpace = document.createElement('span');
+      letterSpace.classList.add('letter');
+      letterSpace.innerHTML = ' ';
+
+      rowEL.innerHTML += wordEl;
+      rowEL.innerHTML += letterSpace.outerHTML;
       return rowEL;
     }, paragraphLetterRow);
 };
@@ -31,7 +37,7 @@ export const creatLetterBoard = (levelInfo) => {
   letterContainer.innerHTML = '';
 
   for (let line = 0; line < letterLines; line += 1) {
-    const letterRowEl = createletterRowEl(letterRow);
+    const letterRowEl = createletterRowEl(letterRow, (line + 1));
     letterContainer.appendChild(letterRowEl);
   }
 };
