@@ -2,18 +2,57 @@ const CLASS_KEY = 'key';
 const CLASS_BUTTON_DISABLED = 'button-disabled';
 const LEFT_ELEMENT_ID = 'container-left-hand';
 const RIGHT_ELEMENT_ID = 'container-right-hand';
+const WORD_LEVEL_07 = 'açsldkfjgh';
+const WORD_LEVEL_08 = 'ghfjdkslaç';
 
 export const data = {
-  letterBoard: {
-    level1: {
-      letterRow: ['asdf', 'asdf', 'asdf', 'asdf', 'asdf', 'asdf', 'asdf'],
+  letterBoardLevels: [
+    {
+      id: 1,
+      letterRow: ['asdfg', 'asdfg', 'asdfg', 'asdfg', 'asdfg', 'asdfg'],
       letterLines: 5,
     },
-    level2: {
-      letterRow: ['fdsa', 'fdsa', 'fdsa', 'fdsa', 'fdsa', 'fdsa', 'fdsa'],
+    {
+      id: 2,
+      letterRow: ['gfdsa', 'gfdsa', 'gfdsa', 'gfdsa', 'gfdsa', 'gfdsa'],
       letterLines: 5,
     },
-  },
+    {
+      id: 3,
+      letterRow: ['hjklç', 'hjklç', 'hjklç', 'hjklç', 'hjklç', 'hjklç'],
+      letterLines: 5,
+    },
+    {
+      id: 4,
+      letterRow: ['çlkjh', 'çlkjh', 'çlkjh', 'çlkjh', 'çlkjh', 'çlkjh'],
+      letterLines: 5,
+    },
+    {
+      id: 5,
+      letterRow: ['asdfg', 'hjklç', 'asdfg', 'hjklç', 'asdfg', 'hjklç'],
+      letterLines: 5,
+    },
+    {
+      id: 6,
+      letterRow: ['çlkjh', 'gfdsa', 'çlkjh', 'gfdsa', 'çlkjh', 'gfdsa'],
+      letterLines: 5,
+    },
+    {
+      id: 7,
+      letterRow: [WORD_LEVEL_07, WORD_LEVEL_07, WORD_LEVEL_07, WORD_LEVEL_07],
+      letterLines: 5,
+    },
+    {
+      id: 8,
+      letterRow: [WORD_LEVEL_08, WORD_LEVEL_08, WORD_LEVEL_08, WORD_LEVEL_08],
+      letterLines: 5,
+    },
+    {
+      id: 9,
+      letterRow: ['aç', 'sl', 'dk', 'fj', 'gh', 'aç', 'sl', 'dk', 'fj', 'gh'],
+      letterLines: 5,
+    },
+  ],
   keyboard: [
     [
       { tecla: '\'', class: `${CLASS_KEY} ${CLASS_BUTTON_DISABLED}` },

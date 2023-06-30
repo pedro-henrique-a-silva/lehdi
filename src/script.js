@@ -5,28 +5,29 @@ import './style/navPhase.css';
 import './style/statusTyping.css';
 import './style/style.css';
 import { data } from './data';
-// import creatLetterBoard from './createLetterBoard';
-import { creatLetterBoard } from './createLetterBoard';
+import { creatLetterBoard, updateLetterBoard } from './createLetterBoard';
 import { renderKeyBoard } from './createKeyboard';
 import changeFingerHighLight from './changeFingerHighligth';
 import changeLetterHighlight from './changeLetterHighlight';
+import { setPhaseValue } from './utils';
 
 document.addEventListener('keydown', (event) => {
-  // Captura o código da tecla pressionada
   const keyCode = event.key.replace(' ', 'space');
-  console.log(`Tecla pressionada:${keyCode}tecla`);
   const tecla = document.querySelector(`#tecla-${keyCode}`);
 
   if (tecla) {
     tecla.classList.toggle('active-key');
-    changeLetterHighlight(keyCode);
+    try {
+      changeLetterHighlight(keyCode);
+    } catch (error) {
+      updateLetterBoard(data.letterBoardLevels);
+    }
 
     changeFingerHighLight();
   }
 });
 
 document.addEventListener('keyup', (event) => {
-  // Captura o código da tecla pressionada
   const keyCode = event.key.replace(' ', 'space');
   const tecla = document.querySelector(`#tecla-${keyCode}`);
   if (tecla) {
@@ -35,9 +36,10 @@ document.addEventListener('keyup', (event) => {
 });
 
 window.onload = () => {
-  const { letterBoard } = data;
-  creatLetterBoard(letterBoard.level2);
+  const { letterBoardLevels } = data;
+  const level = letterBoardLevels[0];
+  creatLetterBoard(level);
   renderKeyBoard();
-
+  setPhaseValue(level.id);
   changeFingerHighLight();
 };

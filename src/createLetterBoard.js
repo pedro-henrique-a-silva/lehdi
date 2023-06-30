@@ -1,3 +1,5 @@
+import { getPhaseValue, setPhaseValue } from './utils';
+
 const createLetterGroupEl = (arrayOfLetter) => {
   const spanLetterGroup = document.createElement('span');
   spanLetterGroup.classList.add('letter-group');
@@ -34,7 +36,7 @@ const createletterRowEl = (arrayOfWord, rowID) => {
 };
 
 export const creatLetterBoard = (levelInfo) => {
-  const { letterRow, letterLines } = levelInfo;
+  const { id, letterRow, letterLines } = levelInfo;
   const letterContainer = document.querySelector('.letter-container');
   letterContainer.innerHTML = '';
 
@@ -46,4 +48,16 @@ export const creatLetterBoard = (levelInfo) => {
   letterContainer
     .firstElementChild
     .firstElementChild.classList.add('active-letter');
+
+  setPhaseValue(id);
+};
+
+export const updateLetterBoard = (levelArray) => {
+  const currentPhase = getPhaseValue();
+
+  const nextPhase = levelArray[(currentPhase + 1) - 1];
+
+  if (!nextPhase) throw new Error('Não há mais fases para treinar');
+
+  creatLetterBoard(nextPhase);
 };
