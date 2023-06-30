@@ -29,7 +29,8 @@ export const data = {
       { tecla: '0', class: `${CLASS_KEY} ${CLASS_BUTTON_DISABLED}` },
       { tecla: '-', class: `${CLASS_KEY} ${CLASS_BUTTON_DISABLED}` },
       { tecla: '=', class: `${CLASS_KEY} ${CLASS_BUTTON_DISABLED}` },
-      { tecla: 'Backspace', class: `${CLASS_KEY} ${CLASS_BUTTON_DISABLED} key-backspace` },
+      { tecla: 'Backspace',
+        class: `${CLASS_KEY} ${CLASS_BUTTON_DISABLED} key-backspace` },
     ],
     [
       { tecla: 'Tab', class: `${CLASS_KEY} ${CLASS_BUTTON_DISABLED}` },

@@ -23,23 +23,23 @@
 .r-finger-pos {
   /* finger 1 */
   --top-finger1: 0;
-  --left-finger1: 17px;
+  --left-finger1: 49px;
 
   /* finger 2 */
-  --top-finger2: -5px;
-  --left-finger2: 24px;
+  --top-finger2: -4px;
+  --left-finger2: 44px;
 
   /* finger 3 */
   --top-finger3: -7px;
-  --left-finger3: 31px;
+  --left-finger3: 34px;
 
   /* finger 4 */
   --top-finger4: -6px;
-  --left-finger4: 41px;
+  --left-finger4: 26px;
 
   /* finger 5 */
   --top-finger5: 8px;
-  --left-finger5: 49px;
+  --left-finger5: 19px;
 }
 
 .hand {
