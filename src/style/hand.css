@@ -1,3 +1,47 @@
+.l-finger-pos {
+  /* finger 1 */
+  --top-finger1: 0;
+  --left-finger1: 17px;
+
+  /* finger 2 */
+  --top-finger2: -5px;
+  --left-finger2: 24px;
+
+  /* finger 3 */
+  --top-finger3: -7px;
+  --left-finger3: 31px;
+
+  /* finger 4 */
+  --top-finger4: -6px;
+  --left-finger4: 41px;
+
+  /* finger 5 */
+  --top-finger5: 8px;
+  --left-finger5: 49px;
+}
+
+.r-finger-pos {
+  /* finger 1 */
+  --top-finger1: 0;
+  --left-finger1: 17px;
+
+  /* finger 2 */
+  --top-finger2: -5px;
+  --left-finger2: 24px;
+
+  /* finger 3 */
+  --top-finger3: -7px;
+  --left-finger3: 31px;
+
+  /* finger 4 */
+  --top-finger4: -6px;
+  --left-finger4: 41px;
+
+  /* finger 5 */
+  --top-finger5: 8px;
+  --left-finger5: 49px;
+}
+
 .hand {
   text-align: center;
   width: 10%;
@@ -13,4 +57,59 @@
 
 .change-png-color {
   filter: invert(100%);
+}
+
+.finger-1::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  background-color: #04f104;
+  height: 5px;
+  border-radius: 100%;
+  top: var(--top-finger1);
+  left: var(--left-finger1);
+}
+
+.finger-2::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  background-color: #04f104;
+  height: 5px;
+  border-radius: 100%;
+  top: var(--top-finger2);
+  left: var(--left-finger2);
+}
+
+.finger-3::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  background-color: #04f104;
+  height: 5px;
+  border-radius: 100%;
+  top: var(--top-finger3);
+  left: var(--left-finger3);
+}
+
+.finger-4::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  background-color: #04f104;
+  height: 5px;
+  border-radius: 100%;
+  top: var(--top-finger4);
+  left: var(--left-finger4);
+}
+
+.finger-5::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  background-color: #04f104;
+  height: 5px;
+  border-radius: 100%;
+  top: var(--top-finger5);
+  left: var(--left-finger5);
 }
