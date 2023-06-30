@@ -16,6 +16,21 @@
   }
 
   & .letter {
+    position: relative;
     padding: 0 2px;
   }
+}
+
+.active-letter::after {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  border-bottom: 2px solid white;
+  width: 10px;
+  top: 22px;
+  left: 2px;
+}
+
+.hit {
+  color: #32e132;
 }

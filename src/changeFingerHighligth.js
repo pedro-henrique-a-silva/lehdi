@@ -14,12 +14,17 @@ const spaceTyped = () => {
   leftHand.className = 'status hand l-finger-pos finger-5';
 };
 
-const changeFingerHighLigth = (key) => {
+const getLetterEl = () => {
+  const letterTarget = document.querySelector('.active-letter');
+  return letterTarget.getAttribute('data-letter');
+};
+
+const changeFingerHighLight = () => {
   const { fingerMap } = data;
+  const key = getLetterEl();
   clearHighlight();
-  console.log('mapeando a key ', key);
+  // console.log('mapeando a key ', key);
   const fingerData = fingerMap.find(({ letterList }) => {
-    console.log(letterList);
     return letterList.includes(key);
   });
 
@@ -34,4 +39,4 @@ const changeFingerHighLigth = (key) => {
   }
 };
 
-export default changeFingerHighLigth;
+export default changeFingerHighLight;

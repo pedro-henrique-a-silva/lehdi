@@ -89,7 +89,7 @@
   }
 }
 
-.active {
+.active-key {
   border-bottom: 2px solid black !important;
   border-left: 1px solid black !important;
   line-height: 30px !important;

@@ -6,6 +6,7 @@ const createLetterGroupEl = (arrayOfLetter) => {
     const letterEl = document.createElement('span');
     letterEl.classList.add('letter');
     letterEl.innerHTML = letter;
+    letterEl.setAttribute('data-letter', letter);
     return letterEl;
   })
     .reduce((letterGroupEL, letterEl) => {
@@ -24,6 +25,7 @@ const createletterRowEl = (arrayOfWord, rowID) => {
       const letterSpace = document.createElement('span');
       letterSpace.classList.add('letter');
       letterSpace.innerHTML = ' ';
+      letterSpace.setAttribute('data-letter', 'space');
 
       rowEL.innerHTML += wordEl;
       rowEL.innerHTML += letterSpace.outerHTML;
@@ -40,4 +42,8 @@ export const creatLetterBoard = (levelInfo) => {
     const letterRowEl = createletterRowEl(letterRow, (line + 1));
     letterContainer.appendChild(letterRowEl);
   }
+
+  letterContainer
+    .firstElementChild
+    .firstElementChild.classList.add('active-letter');
 };
