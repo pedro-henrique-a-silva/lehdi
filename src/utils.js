@@ -1,11 +1,34 @@
-export const setPhaseValue = (phaseId) => {
-  const phaseEL = document.querySelector('.phase');
-  phaseEL.innerHTML = `Fase: ${phaseId}`;
-  phaseEL.setAttribute('data-phase', phaseId);
+import { data } from './data';
+
+export const setLevelValue = (levelId) => {
+  const phaseEL = document.querySelector('.level');
+  phaseEL.innerHTML = `Fase: ${levelId}`;
+  phaseEL.setAttribute('data-level', levelId);
 };
 
-export const getPhaseValue = () => {
-  const phaseEl = document.querySelector('.phase');
+export const getLevelValue = () => {
+  const phaseEl = document.querySelector('.level');
 
-  return Number(phaseEl.getAttribute('data-phase'));
+  return Number(phaseEl.getAttribute('data-level'));
+};
+
+export const getNextLevelInfo = () => {
+  const currentLevel = getLevelValue();
+  const nextLevel = data.letterBoardLevels[(currentLevel + 1) - 1];
+  return nextLevel;
+};
+
+export const getPreviousLevelInfo = () => {
+  const currentLevel = getLevelValue();
+  const previousLevel = data.letterBoardLevels[(currentLevel - 1) - 1];
+
+  return previousLevel;
+};
+
+export const getCurrentLevelInfo = () => {
+  const currentLevel = getLevelValue();
+
+  const currentLevelInfo = data.letterBoardLevels[currentLevel - 1];
+
+  return currentLevelInfo;
 };

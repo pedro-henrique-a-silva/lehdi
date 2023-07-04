@@ -1,4 +1,4 @@
-import { getPhaseValue, setPhaseValue } from './utils';
+import { setLevelValue } from './utils';
 
 const createLetterGroupEl = (arrayOfLetter) => {
   const spanLetterGroup = document.createElement('span');
@@ -49,15 +49,11 @@ export const creatLetterBoard = (levelInfo) => {
     .firstElementChild
     .firstElementChild.classList.add('active-letter');
 
-  setPhaseValue(id);
+  setLevelValue(id);
 };
 
-export const updateLetterBoard = (levelArray) => {
-  const currentPhase = getPhaseValue();
+// export const updateLetterBoard = () => {
+//   const nextLevel = getNextLevelInfo();
 
-  const nextPhase = levelArray[(currentPhase + 1) - 1];
-
-  if (!nextPhase) throw new Error('Não há mais fases para treinar');
-
-  creatLetterBoard(nextPhase);
-};
+//   if (!nextLevel) throw new Error('Não há mais fases para treinar');
+// };

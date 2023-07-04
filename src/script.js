@@ -1,15 +1,25 @@
 import './style/hand.css';
 import './style/keyboard.css';
 import './style/letterBoard.css';
-import './style/navPhase.css';
+import './style/navLevel.css';
 import './style/statusTyping.css';
 import './style/style.css';
 import { data } from './data';
-import { creatLetterBoard, updateLetterBoard } from './createLetterBoard';
+import { creatLetterBoard } from './createLetterBoard';
 import { renderKeyBoard } from './createKeyboard';
 import changeFingerHighLight from './changeFingerHighligth';
 import changeLetterHighlight from './changeLetterHighlight';
-import { setPhaseValue } from './utils';
+import { getNextLevelInfo } from './utils';
+import { changeToNextLevel, changeToPreviousLevel, reloadLevel } from './navBar';
+
+document.querySelector('#previous-button')
+  .addEventListener('click', changeToPreviousLevel);
+
+document.querySelector('#next-button')
+  .addEventListener('click', changeToNextLevel);
+
+document.querySelector('#reload-button')
+  .addEventListener('click', reloadLevel);
 
 document.addEventListener('keydown', (event) => {
   const keyCode = event.key.replace(' ', 'space');
@@ -20,7 +30,8 @@ document.addEventListener('keydown', (event) => {
     try {
       changeLetterHighlight(keyCode);
     } catch (error) {
-      updateLetterBoard(data.letterBoardLevels);
+      const nextLevelInfo = getNextLevelInfo();
+      creatLetterBoard(nextLevelInfo);
     }
 
     changeFingerHighLight();
@@ -40,6 +51,6 @@ window.onload = () => {
   const level = letterBoardLevels[0];
   creatLetterBoard(level);
   renderKeyBoard();
-  setPhaseValue(level.id);
+  // setLevelValue(level.id);
   changeFingerHighLight();
 };
