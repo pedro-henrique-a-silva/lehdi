@@ -51,6 +51,4 @@ window.onload = () => {
   const level = letterBoardLevels[0];
   creatLetterBoard(level);
   renderKeyBoard();
-  // setLevelValue(level.id);
-  changeFingerHighLight();
 };

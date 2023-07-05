@@ -1,3 +1,5 @@
+import { errorCount, hitCount } from './utils';
+
 const getNextElement = (activeElement) => {
   let nextLetterEl = activeElement.nextElementSibling;
 
@@ -22,6 +24,9 @@ const changeLetterHighlight = (key) => {
     letterTarget.classList.remove('active-letter');
     letterTarget.classList.add('hit');
     nextLetterEl.classList.add('active-letter');
+    hitCount();
+  } else {
+    errorCount();
   }
 };
 

@@ -1,4 +1,5 @@
-import { setLevelValue } from './utils';
+import { setLevelValue, resetCount } from './utils';
+import changeFingerHighLight from './changeFingerHighligth';
 
 const createLetterGroupEl = (arrayOfLetter) => {
   const spanLetterGroup = document.createElement('span');
@@ -50,10 +51,6 @@ export const creatLetterBoard = (levelInfo) => {
     .firstElementChild.classList.add('active-letter');
 
   setLevelValue(id);
+  changeFingerHighLight();
+  resetCount();
 };
-
-// export const updateLetterBoard = () => {
-//   const nextLevel = getNextLevelInfo();
-
-//   if (!nextLevel) throw new Error('Não há mais fases para treinar');
-// };
