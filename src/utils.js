@@ -3,6 +3,9 @@ import { data } from './data';
 const dataError = 'data-error';
 const dataHit = 'data-hit';
 
+const getInfo = (levelId) => data.letterBoardLevels
+  .find((level) => levelId === level.id);
+
 export const setLevelValue = (levelId) => {
   const levelEL = document.querySelector('.level');
   levelEL.innerHTML = `Fase: ${levelId}`;
@@ -17,13 +20,13 @@ export const getLevelValue = () => {
 
 export const getNextLevelInfo = () => {
   const currentLevel = getLevelValue();
-  const nextLevel = data.letterBoardLevels[(currentLevel + 1) - 1];
+  const nextLevel = getInfo((currentLevel + 1));
   return nextLevel;
 };
 
 export const getPreviousLevelInfo = () => {
   const currentLevel = getLevelValue();
-  const previousLevel = data.letterBoardLevels[(currentLevel - 1) - 1];
+  const previousLevel = getInfo((currentLevel - 1));
 
   return previousLevel;
 };
@@ -31,7 +34,7 @@ export const getPreviousLevelInfo = () => {
 export const getCurrentLevelInfo = () => {
   const currentLevel = getLevelValue();
 
-  const currentLevelInfo = data.letterBoardLevels[currentLevel - 1];
+  const currentLevelInfo = getInfo(currentLevel);
 
   return currentLevelInfo;
 };

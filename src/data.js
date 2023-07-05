@@ -19,37 +19,97 @@ export const data = {
     },
     {
       id: 3,
-      letterRow: ['hjklç', 'hjklç', 'hjklç', 'hjklç', 'hjklç', 'hjklç'],
+      letterRow: ['asdfg', 'gfdsa', 'asdfg', 'gfdsa', 'asdfg', 'gfdsa'],
       letterLines: 5,
     },
     {
       id: 4,
-      letterRow: ['çlkjh', 'çlkjh', 'çlkjh', 'çlkjh', 'çlkjh', 'çlkjh'],
+      letterRow: ['hjklç', 'hjklç', 'hjklç', 'hjklç', 'hjklç', 'hjklç'],
       letterLines: 5,
     },
     {
       id: 5,
-      letterRow: ['asdfg', 'hjklç', 'asdfg', 'hjklç', 'asdfg', 'hjklç'],
+      letterRow: ['çlkjh', 'çlkjh', 'çlkjh', 'çlkjh', 'çlkjh', 'çlkjh'],
       letterLines: 5,
     },
     {
       id: 6,
-      letterRow: ['çlkjh', 'gfdsa', 'çlkjh', 'gfdsa', 'çlkjh', 'gfdsa'],
+      letterRow: ['hjklç', 'çlkjh', 'hjklç', 'çlkjh', 'hjklç', 'çlkjh'],
       letterLines: 5,
     },
     {
       id: 7,
-      letterRow: [WORD_LEVEL_07, WORD_LEVEL_07, WORD_LEVEL_07, WORD_LEVEL_07],
+      letterRow: ['asdfg', 'hjklç', 'asdfg', 'hjklç', 'asdfg', 'hjklç'],
       letterLines: 5,
     },
     {
       id: 8,
-      letterRow: [WORD_LEVEL_08, WORD_LEVEL_08, WORD_LEVEL_08, WORD_LEVEL_08],
+      letterRow: ['çlkjh', 'gfdsa', 'çlkjh', 'gfdsa', 'çlkjh', 'gfdsa'],
       letterLines: 5,
     },
     {
       id: 9,
+      letterRow: [WORD_LEVEL_07, WORD_LEVEL_07, WORD_LEVEL_07, WORD_LEVEL_07],
+      letterLines: 5,
+    },
+    {
+      id: 10,
+      letterRow: [WORD_LEVEL_08, WORD_LEVEL_08, WORD_LEVEL_08, WORD_LEVEL_08],
+      letterLines: 5,
+    },
+    {
+      id: 11,
       letterRow: ['aç', 'sl', 'dk', 'fj', 'gh', 'aç', 'sl', 'dk', 'fj', 'gh'],
+      letterLines: 5,
+    },
+    {
+      id: 12,
+      letterRow: ['gh', 'fj', 'dk', 'sl', 'aç', 'gh', 'fj', 'dk', 'sl', 'aç'],
+      letterLines: 5,
+    },
+    {
+      id: 13,
+      letterRow: ['fala', 'falada'],
+      letterLines: 5,
+    },
+    {
+      id: 14,
+      letterRow: ['laça', 'laçada'],
+      letterLines: 5,
+    },
+    {
+      id: 15,
+      letterRow: ['salsa', 'salada'],
+      letterLines: 5,
+    },
+    {
+      id: 16,
+      letterRow: ['qwert', 'qwert', 'qwert', 'qwert', 'qwert', 'qwert'],
+      letterLines: 5,
+    },
+    {
+      id: 17,
+      letterRow: ['trewq', 'trewq', 'trewq', 'trewq', 'trewq', 'trewq'],
+      letterLines: 5,
+    },
+    {
+      id: 18,
+      letterRow: ['qwert', 'trewq', 'qwert', 'trewq', 'qwert', 'trewq'],
+      letterLines: 5,
+    },
+    {
+      id: 19,
+      letterRow: ['yuiop', 'yuiop', 'yuiop', 'yuiop', 'yuiop', 'yuiop'],
+      letterLines: 5,
+    },
+    {
+      id: 20,
+      letterRow: ['poiuy', 'poiuy', 'poiuy', 'poiuy', 'poiuy', 'poiuy'],
+      letterLines: 5,
+    },
+    {
+      id: 21,
+      letterRow: ['yuiop', 'poiuy', 'yuiop', 'poiuy', 'yuiop', 'poiuy'],
       letterLines: 5,
     },
   ],
