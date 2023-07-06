@@ -43,8 +43,9 @@ document.addEventListener('keydown', (event) => {
     try {
       changeLetterHighlight(keyCode);
     } catch (error) {
-      const nextLevelInfo = getNextLevelInfo();
-      creatLetterBoard(nextLevelInfo);
+      // const nextLevelInfo = getNextLevelInfo();
+      // creatLetterBoard(nextLevelInfo);
+      changeToNextLevel();
     }
 
     changeFingerHighLight();

@@ -7,13 +7,21 @@ import {
 import { creatLetterBoard } from './createLetterBoard';
 
 export const changeToNextLevel = () => {
-  const nextLevelInfo = getNextLevelInfo();
-  creatLetterBoard(nextLevelInfo);
+  try {
+    const nextLevelInfo = getNextLevelInfo();
+    creatLetterBoard(nextLevelInfo);
+  } catch (error) {
+    console.log(error.message);
+  }
 };
 
 export const changeToPreviousLevel = () => {
-  const prevuousLevelInfo = getPreviousLevelInfo();
-  creatLetterBoard(prevuousLevelInfo);
+  try {
+    const prevuousLevelInfo = getPreviousLevelInfo();
+    creatLetterBoard(prevuousLevelInfo);
+  } catch (error) {
+    console.log(error.message);
+  }
 };
 
 export const reloadLevel = () => {

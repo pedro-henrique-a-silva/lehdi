@@ -21,12 +21,17 @@ export const getLevelValue = () => {
 export const getNextLevelInfo = () => {
   const currentLevel = getLevelValue();
   const nextLevel = getInfo((currentLevel + 1));
+
+  if (!nextLevel) throw new Error('Não há mais niveis a frente');
+
   return nextLevel;
 };
 
 export const getPreviousLevelInfo = () => {
   const currentLevel = getLevelValue();
   const previousLevel = getInfo((currentLevel - 1));
+
+  if (!previousLevel) throw new Error('Não há mais niveis anteriores ');
 
   return previousLevel;
 };
