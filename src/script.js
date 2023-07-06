@@ -9,7 +9,11 @@ import { creatLetterBoard } from './createLetterBoard';
 import { renderKeyBoard } from './createKeyboard';
 import changeFingerHighLight from './changeFingerHighligth';
 import changeLetterHighlight from './changeLetterHighlight';
-import { getNextLevelInfo } from './utils';
+import {
+  getNextLevelInfo,
+  btnNextInstruction,
+  btnCloseInstruction,
+  openInstruction } from './utils';
 import { changeToNextLevel, changeToPreviousLevel, reloadLevel } from './navBar';
 
 document.querySelector('#previous-button')
@@ -20,6 +24,15 @@ document.querySelector('#next-button')
 
 document.querySelector('#reload-button')
   .addEventListener('click', reloadLevel);
+
+document.querySelector('.btn-instruction-next')
+  .addEventListener('click', btnNextInstruction);
+
+document.querySelector('.btn-instruction-close')
+  .addEventListener('click', btnCloseInstruction);
+
+document.querySelector('#instrucao')
+  .addEventListener('click', openInstruction);
 
 document.addEventListener('keydown', (event) => {
   const keyCode = event.key.replace(' ', 'space');

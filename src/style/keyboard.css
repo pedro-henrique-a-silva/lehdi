@@ -19,7 +19,7 @@
     outline: none;
     background-color: #4C4347;
     font-size: 1em;
-    line-height: 40px;
+    line-height: 35px;
     width: 40px;
     margin: 0 5px;
     border-radius: 15%;
@@ -71,7 +71,7 @@
     position: absolute;
     top: 29px;
     right: 0px;
-    height: 58px;
+    height: 50px;
     width: 51px;
     border-radius: 15%;
     border-radius: 0 2px 2px 2px;
@@ -82,9 +82,6 @@
     width: 100px;
   }
   & .key-r-shift {
-    position: absolute;
-    top: 149px;
-    right: 0;
     width: 115px;
   }
 }

@@ -65,3 +65,23 @@ export const resetCount = () => {
   errorCountEL.innerHTML = '0';
   errorCountEL.setAttribute(dataError, 0);
 };
+
+export const btnNextInstruction = () => {
+  const instruction1 = document.querySelector('.instruction-article1');
+  const instruction2 = document.querySelector('.instruction-article2');
+
+  instruction1.style.display = 'none';
+  instruction2.style.display = 'block';
+};
+
+export const btnCloseInstruction = () => {
+  const instructionsContainer = document.querySelector('.instruction-container');
+
+  instructionsContainer.style.display = 'none';
+};
+
+export const openInstruction = () => {
+  const instructionsContainer = document.querySelector('.instruction-container');
+
+  instructionsContainer.style.display = 'block';
+};
