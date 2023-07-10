@@ -5,85 +5,88 @@
   justify-content: center;
   align-items: center;
   min-width: 760px;
+}
 
-  & .keyboard-row {
-    display: flex;
-    margin-bottom: 10px;
-  }
-  & div {
-    align-self: flex-start;
-  }
+.Keyboard-section .keyboard-row {
+  display: flex;
+  margin-bottom: 10px;
+}
 
-  & button {
-    position: relative;
-    outline: none;
-    background-color: #271c19;
-    font-size: 1em;
-    line-height: 35px;
-    width: 40px;
-    margin: 0 5px;
-    border-radius: 15%;
-    font-weight: 500;
-    box-shadow: 0px 0px 5px 2px #333;
-    cursor: pointer;
-    border: none;
-    color: #FAFAFF;
-  }
+.Keyboard-section div {
+  align-self: flex-start;
+}
 
-  & .key-capslock {
-    width: 90px;
-  }
+.Keyboard-section button {
+  position: relative;
+  outline: none;
+  background-color: #271c19;
+  font-size: 1em;
+  line-height: 35px;
+  width: 40px;
+  margin: 0 5px;
+  border-radius: 15%;
+  font-weight: 500;
+  box-shadow: 0px 0px 5px 2px #333;
+  cursor: pointer;
+  border: none;
+  color: #FAFAFF;
+}
 
-  & .key-tab {
-    width: 60px;
-  }
+.Keyboard-section .key-capslock {
+  width: 90px;
+}
 
-  & .key-l-shift {
-    width: 75px;
-  }
+.Keyboard-section .key-tab {
+  width: 60px;
+}
 
-  & .key-l-ctrl {
-    width: 89px;
-  }
-  & .key-alt {
-    width: 85px;
-  }
-  & .key-space {
-    width: 315px;
-  }
+.Keyboard-section .key-l-shift {
+  width: 75px;
+}
 
-  & .key-altgr {
-    width: 109px;
-  }
+.Keyboard-section .key-l-ctrl {
+  width: 89px;
+}
+.Keyboard-section .key-alt {
+  width: 85px;
+}
+.Keyboard-section .key-space {
+  width: 315px;
+}
 
-  & .key-r-ctrl {
-    width: 112px;
-  }
+.Keyboard-section .key-altgr {
+  width: 109px;
+}
 
-  & .key-enter {
-    width: 100px;
-    border-radius: 2px 2px 0px 8px;
-    box-shadow: 0px 0px 5px 2px #333;
-  }
+.Keyboard-section .key-r-ctrl {
+  width: 112px;
+}
 
-  & .key-enter::after {
-    content: '';
-    position: absolute;
-    top: 29px;
-    right: 0px;
-    height: 50px;
-    width: 51px;
-    border-radius: 15%;
-    border-radius: 0 2px 2px 2px;
-    box-shadow: 0px 3px 5px 1px #333;
-    background-color: #271c19;
-  }
-  & .key-backspace {
-    width: 100px;
-  }
-  & .key-r-shift {
-    width: 115px;
-  }
+.Keyboard-section .key-enter {
+  width: 100px;
+  border-radius: 2px 2px 0px 8px;
+  box-shadow: 0px 0px 5px 2px #333;
+}
+
+.Keyboard-section .key-enter::after {
+  content: '';
+  position: absolute;
+  top: 29px;
+  right: 0px;
+  height: 50px;
+  width: 51px;
+  border-radius: 15%;
+  border-radius: 0 2px 2px 2px;
+  box-shadow: 0px 3px 5px 1px #333;
+  background-color: #271c19;
+}
+
+.Keyboard-section .key-backspace {
+  width: 100px;
+}
+
+.Keyboard-section .key-r-shift {
+  width: 115px;
 }
 
 .active-key {

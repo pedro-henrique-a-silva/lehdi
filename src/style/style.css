@@ -22,9 +22,10 @@ header {
   margin: 0 auto;
   padding: 10px;
 
-  & section {
-    width: 96%;
-  }
+}
+
+.main-content section {
+  width: 96%;
 }
 
 .instruction-container {
@@ -38,9 +39,11 @@ header {
   transform: translateX(-50%);
   text-align: center;
   box-shadow: 1px 1px 6px 500px hsla(0, 0%, 0%, 0.7);
-  & p {
-    line-height: 30px;
-  }
+  
+}
+
+.instruction-container p {
+  line-height: 30px;
 }
 
 .hand-pos-initial {
@@ -86,17 +89,18 @@ header {
   min-width: 760px;
   font-size: 25px;
 
-  & .repeat-button {
-    margin: 0 20px;
-    cursor: pointer;
-  }
-  
-  & .arrow-button {
-    cursor: pointer;
-  }
-
-  & #instrucao {
-    cursor: pointer;
-  }
+ 
 }
 
+.instruction-alert-section .repeat-button {
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.instruction-alert-section .arrow-button {
+  cursor: pointer;
+}
+
+.instruction-alert-section #instrucao {
+  cursor: pointer;
+}
