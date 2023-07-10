@@ -10,7 +10,6 @@ import { renderKeyBoard } from './createKeyboard';
 import changeFingerHighLight from './changeFingerHighligth';
 import changeLetterHighlight from './changeLetterHighlight';
 import {
-  getNextLevelInfo,
   btnNextInstruction,
   btnCloseInstruction,
   openInstruction } from './utils';
@@ -43,8 +42,6 @@ document.addEventListener('keydown', (event) => {
     try {
       changeLetterHighlight(keyCode);
     } catch (error) {
-      // const nextLevelInfo = getNextLevelInfo();
-      // creatLetterBoard(nextLevelInfo);
       changeToNextLevel();
     }
 

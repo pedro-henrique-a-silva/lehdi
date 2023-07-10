@@ -1,3 +1,4 @@
+import Swal from 'sweetalert2';
 import {
   getCurrentLevelInfo,
   getNextLevelInfo,
@@ -11,7 +12,12 @@ export const changeToNextLevel = () => {
     const nextLevelInfo = getNextLevelInfo();
     creatLetterBoard(nextLevelInfo);
   } catch (error) {
-    console.log(error.message);
+    Swal.fire({
+      title: 'Atenção!',
+      text: error.message,
+      icon: 'info',
+      confirmButtonText: 'ok',
+    });
   }
 };
 
@@ -20,7 +26,12 @@ export const changeToPreviousLevel = () => {
     const prevuousLevelInfo = getPreviousLevelInfo();
     creatLetterBoard(prevuousLevelInfo);
   } catch (error) {
-    console.log(error.message);
+    Swal.fire({
+      title: 'Atenção!',
+      text: error.message,
+      icon: 'info',
+      confirmButtonText: 'ok',
+    });
   }
 };
 
