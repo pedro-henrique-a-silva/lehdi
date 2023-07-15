@@ -1,4 +1,4 @@
-import { setLevelValue, resetCount } from './utils';
+import { setLevelValue, resetCount, nameOfKey } from './utils';
 import changeFingerHighLight from './changeFingerHighligth';
 
 const createLetterGroupEl = (arrayOfLetter) => {
@@ -9,7 +9,7 @@ const createLetterGroupEl = (arrayOfLetter) => {
     const letterEl = document.createElement('span');
     letterEl.classList.add('letter');
     letterEl.innerHTML = letter;
-    letterEl.setAttribute('data-letter', letter);
+    letterEl.setAttribute('data-letter', nameOfKey(letter));
     return letterEl;
   })
     .reduce((letterGroupEL, letterEl) => {

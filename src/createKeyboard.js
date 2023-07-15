@@ -1,4 +1,5 @@
 import { data } from './data';
+import { nameOfKey } from './utils';
 
 const getKeyboardRowElement = (keyboardRowData) => {
   const keyboardRowEl = document.createElement('div');
@@ -6,7 +7,7 @@ const getKeyboardRowElement = (keyboardRowData) => {
 
   return keyboardRowData.map((key) => {
     const btnKeyboard = document.createElement('button');
-    btnKeyboard.id = `tecla-${key.tecla}`;
+    btnKeyboard.id = `tecla-${nameOfKey(key.tecla)}`;
     btnKeyboard.innerHTML = key.tecla;
     btnKeyboard.className = key.class;
     return btnKeyboard;

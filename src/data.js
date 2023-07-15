@@ -2,117 +2,8 @@ const CLASS_KEY = 'key';
 const CLASS_BUTTON_DISABLED = 'button-disabled';
 const LEFT_ELEMENT_ID = 'container-left-hand';
 const RIGHT_ELEMENT_ID = 'container-right-hand';
-const WORD_LEVEL_07 = 'açsldkfjgh';
-const WORD_LEVEL_08 = 'ghfjdkslaç';
 
 export const data = {
-  letterBoardLevels: [
-    {
-      id: 1,
-      letterRow: ['asdfg', 'asdfg', 'asdfg', 'asdfg', 'asdfg', 'asdfg'],
-      letterLines: 5,
-    },
-    {
-      id: 2,
-      letterRow: ['gfdsa', 'gfdsa', 'gfdsa', 'gfdsa', 'gfdsa', 'gfdsa'],
-      letterLines: 5,
-    },
-    {
-      id: 3,
-      letterRow: ['asdfg', 'gfdsa', 'asdfg', 'gfdsa', 'asdfg', 'gfdsa'],
-      letterLines: 5,
-    },
-    {
-      id: 4,
-      letterRow: ['hjklç', 'hjklç', 'hjklç', 'hjklç', 'hjklç', 'hjklç'],
-      letterLines: 5,
-    },
-    {
-      id: 5,
-      letterRow: ['çlkjh', 'çlkjh', 'çlkjh', 'çlkjh', 'çlkjh', 'çlkjh'],
-      letterLines: 5,
-    },
-    {
-      id: 6,
-      letterRow: ['hjklç', 'çlkjh', 'hjklç', 'çlkjh', 'hjklç', 'çlkjh'],
-      letterLines: 5,
-    },
-    {
-      id: 7,
-      letterRow: ['asdfg', 'hjklç', 'asdfg', 'hjklç', 'asdfg', 'hjklç'],
-      letterLines: 5,
-    },
-    {
-      id: 8,
-      letterRow: ['çlkjh', 'gfdsa', 'çlkjh', 'gfdsa', 'çlkjh', 'gfdsa'],
-      letterLines: 5,
-    },
-    {
-      id: 9,
-      letterRow: [WORD_LEVEL_07, WORD_LEVEL_07, WORD_LEVEL_07, WORD_LEVEL_07],
-      letterLines: 5,
-    },
-    {
-      id: 10,
-      letterRow: [WORD_LEVEL_08, WORD_LEVEL_08, WORD_LEVEL_08, WORD_LEVEL_08],
-      letterLines: 5,
-    },
-    {
-      id: 11,
-      letterRow: ['aç', 'sl', 'dk', 'fj', 'gh', 'aç', 'sl', 'dk', 'fj', 'gh'],
-      letterLines: 5,
-    },
-    {
-      id: 12,
-      letterRow: ['gh', 'fj', 'dk', 'sl', 'aç', 'gh', 'fj', 'dk', 'sl', 'aç'],
-      letterLines: 5,
-    },
-    {
-      id: 13,
-      letterRow: ['fala', 'falada'],
-      letterLines: 5,
-    },
-    {
-      id: 14,
-      letterRow: ['laça', 'laçada'],
-      letterLines: 5,
-    },
-    {
-      id: 15,
-      letterRow: ['salsa', 'salada'],
-      letterLines: 5,
-    },
-    {
-      id: 16,
-      letterRow: ['qwert', 'qwert', 'qwert', 'qwert', 'qwert', 'qwert'],
-      letterLines: 5,
-    },
-    {
-      id: 17,
-      letterRow: ['trewq', 'trewq', 'trewq', 'trewq', 'trewq', 'trewq'],
-      letterLines: 5,
-    },
-    {
-      id: 18,
-      letterRow: ['qwert', 'trewq', 'qwert', 'trewq', 'qwert', 'trewq'],
-      letterLines: 5,
-    },
-    {
-      id: 19,
-      letterRow: ['yuiop', 'yuiop', 'yuiop', 'yuiop', 'yuiop', 'yuiop'],
-      letterLines: 5,
-    },
-    {
-      id: 20,
-      letterRow: ['poiuy', 'poiuy', 'poiuy', 'poiuy', 'poiuy', 'poiuy'],
-      letterLines: 5,
-    },
-    {
-      id: 21,
-      letterRow: ['yuiop', 'poiuy', 'yuiop', 'poiuy', 'yuiop', 'poiuy'],
-      letterLines: 5,
-    },
-  ],
   keyboard: [
     [
       { tecla: '\'', class: `${CLASS_KEY} ${CLASS_BUTTON_DISABLED}` },
@@ -133,47 +24,34 @@ export const data = {
     ],
     [
       { tecla: 'Tab', class: `${CLASS_KEY} ${CLASS_BUTTON_DISABLED}` },
-      { tecla: 'q', class: `${CLASS_KEY}` },
-      { tecla: 'w', class: `${CLASS_KEY}` },
-      { tecla: 'e', class: `${CLASS_KEY}` },
-      { tecla: 'r', class: `${CLASS_KEY}` },
-      { tecla: 't', class: `${CLASS_KEY}` },
-      { tecla: 'y', class: `${CLASS_KEY}` },
-      { tecla: 'u', class: `${CLASS_KEY}` },
-      { tecla: 'i', class: `${CLASS_KEY}` },
-      { tecla: 'o', class: `${CLASS_KEY}` },
-      { tecla: 'p', class: `${CLASS_KEY}` },
+      { tecla: 'q', class: `${CLASS_KEY}` }, { tecla: 'w', class: `${CLASS_KEY}` },
+      { tecla: 'e', class: `${CLASS_KEY}` }, { tecla: 'r', class: `${CLASS_KEY}` },
+      { tecla: 't', class: `${CLASS_KEY}` }, { tecla: 'y', class: `${CLASS_KEY}` },
+      { tecla: 'u', class: `${CLASS_KEY}` }, { tecla: 'i', class: `${CLASS_KEY}` },
+      { tecla: 'o', class: `${CLASS_KEY}` }, { tecla: 'p', class: `${CLASS_KEY}` },
       { tecla: '´', class: `${CLASS_KEY} ${CLASS_BUTTON_DISABLED}` },
       { tecla: '[', class: `${CLASS_KEY} ${CLASS_BUTTON_DISABLED}` },
       { tecla: 'Enter', class: `${CLASS_KEY} ${CLASS_BUTTON_DISABLED} key-enter` },
     ],
     [
       { tecla: 'CapsLock', class: `${CLASS_KEY} ${CLASS_BUTTON_DISABLED} key-capslock` },
-      { tecla: 'a', class: `${CLASS_KEY}` },
-      { tecla: 's', class: `${CLASS_KEY}` },
-      { tecla: 'd', class: `${CLASS_KEY}` },
-      { tecla: 'f', class: `${CLASS_KEY}` },
-      { tecla: 'g', class: `${CLASS_KEY}` },
-      { tecla: 'h', class: `${CLASS_KEY}` },
-      { tecla: 'j', class: `${CLASS_KEY}` },
-      { tecla: 'k', class: `${CLASS_KEY}` },
-      { tecla: 'l', class: `${CLASS_KEY}` },
-      { tecla: 'ç', class: `${CLASS_KEY}` },
+      { tecla: 'a', class: `${CLASS_KEY}` }, { tecla: 's', class: `${CLASS_KEY}` },
+      { tecla: 'd', class: `${CLASS_KEY}` }, { tecla: 'f', class: `${CLASS_KEY}` },
+      { tecla: 'g', class: `${CLASS_KEY}` }, { tecla: 'h', class: `${CLASS_KEY}` },
+      { tecla: 'j', class: `${CLASS_KEY}` }, { tecla: 'k', class: `${CLASS_KEY}` },
+      { tecla: 'l', class: `${CLASS_KEY}` }, { tecla: 'ç', class: `${CLASS_KEY}` },
       { tecla: '~', class: `${CLASS_KEY} ${CLASS_BUTTON_DISABLED}` },
       { tecla: '&#8262;', class: `${CLASS_KEY} ${CLASS_BUTTON_DISABLED}` },
     ],
     [
       { tecla: 'Shift', class: `${CLASS_KEY} key-l-shift` },
-      { tecla: 'z', class: `${CLASS_KEY}` },
-      { tecla: 'x', class: `${CLASS_KEY}` },
-      { tecla: 'c', class: `${CLASS_KEY}` },
-      { tecla: 'v', class: `${CLASS_KEY}` },
-      { tecla: 'b', class: `${CLASS_KEY}` },
-      { tecla: 'n', class: `${CLASS_KEY}` },
+      { tecla: 'z', class: `${CLASS_KEY}` }, { tecla: 'x', class: `${CLASS_KEY}` },
+      { tecla: 'c', class: `${CLASS_KEY}` }, { tecla: 'v', class: `${CLASS_KEY}` },
+      { tecla: 'b', class: `${CLASS_KEY}` }, { tecla: 'n', class: `${CLASS_KEY}` },
       { tecla: 'm', class: `${CLASS_KEY}` },
-      { tecla: ',', class: `${CLASS_KEY} ${CLASS_BUTTON_DISABLED}` },
-      { tecla: '.', class: `${CLASS_KEY} ${CLASS_BUTTON_DISABLED}` },
-      { tecla: ';', class: `${CLASS_KEY} ${CLASS_BUTTON_DISABLED}` },
+      { tecla: ',', class: `${CLASS_KEY}` },
+      { tecla: '.', class: `${CLASS_KEY}` },
+      { tecla: ';', class: `${CLASS_KEY}` },
       { tecla: '/', class: `${CLASS_KEY} ${CLASS_BUTTON_DISABLED}` },
       { tecla: 'Shift', class: `${CLASS_KEY} key-r-shift` },
     ],
@@ -223,22 +101,21 @@ export const data = {
     },
     {
       elementID: RIGHT_ELEMENT_ID,
-      letterList: [',', 'k', 'i', '8'],
+      letterList: ['virgula', ',', 'k', 'i', '8'],
       finger: 'finger 3',
       class: 'r-finger-pos finger-3',
     },
     {
       elementID: RIGHT_ELEMENT_ID,
-      letterList: ['.', 'l', 'o', '9'],
+      letterList: ['ponto', '.', 'l', 'o', '9'],
       finger: 'finger 2',
       class: 'r-finger-pos finger-2',
     },
     {
       elementID: RIGHT_ELEMENT_ID,
-      letterList: [';', 'ç', 'p', '0'],
+      letterList: ['ponto-virgula', ';', 'ç', 'p', '0'],
       finger: 'finger 1',
       class: 'r-finger-pos finger-1',
     },
-
   ],
 };

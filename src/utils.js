@@ -1,10 +1,19 @@
-import { data } from './data';
+// import { data } from './data';
+import letterBoardLevels from './letterBoardData';
 
 const dataError = 'data-error';
 const dataHit = 'data-hit';
 
-const getInfo = (levelId) => data.letterBoardLevels
+const getInfo = (levelId) => letterBoardLevels
   .find((level) => levelId === level.id);
+
+export const nameOfKey = (key) => {
+  return key
+    .replace(' ', 'space')
+    .replace(',', 'virgula')
+    .replace('.', 'ponto')
+    .replace(';', 'ponto-virgula');
+};
 
 export const setLevelValue = (levelId) => {
   const levelEL = document.querySelector('.level');

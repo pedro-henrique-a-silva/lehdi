@@ -4,7 +4,8 @@ import './style/letterBoard.css';
 import './style/navLevel.css';
 import './style/statusTyping.css';
 import './style/style.css';
-import { data } from './data';
+// import { data } from './data';
+import letterBoardLevels from './letterBoardData';
 import { creatLetterBoard } from './createLetterBoard';
 import { renderKeyBoard } from './createKeyboard';
 import changeFingerHighLight from './changeFingerHighligth';
@@ -12,7 +13,8 @@ import changeLetterHighlight from './changeLetterHighlight';
 import {
   btnNextInstruction,
   btnCloseInstruction,
-  openInstruction } from './utils';
+  openInstruction,
+  nameOfKey } from './utils';
 import { changeToNextLevel, changeToPreviousLevel, reloadLevel } from './navBar';
 
 document.querySelector('#previous-button')
@@ -34,9 +36,10 @@ document.querySelector('#instrucao')
   .addEventListener('click', openInstruction);
 
 document.addEventListener('keydown', (event) => {
-  const keyCode = event.key.replace(' ', 'space');
-  const tecla = document.querySelector(`#tecla-${keyCode}`);
+  const keyCode = nameOfKey(event.key);
 
+  const tecla = document.querySelector(`#tecla-${keyCode}`);
+  console.log(keyCode);
   if (tecla) {
     tecla.classList.toggle('active-key');
     try {
@@ -51,14 +54,13 @@ document.addEventListener('keydown', (event) => {
 
 document.addEventListener('keyup', (event) => {
   const keyCode = event.key.replace(' ', 'space');
-  const tecla = document.querySelector(`#tecla-${keyCode}`);
+  const tecla = document.querySelector(`#tecla-${nameOfKey(keyCode)}`);
   if (tecla) {
     tecla.classList.toggle('active-key');
   }
 });
 
 window.onload = () => {
-  const { letterBoardLevels } = data;
   const level = letterBoardLevels[0];
   creatLetterBoard(level);
   renderKeyBoard();
