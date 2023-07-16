@@ -6,21 +6,17 @@
   color: white;
   font-size: 20px;
   min-width: 760px;
-
-  
 }
 
 .letter-board .letter-row {
   padding: 5px 15px;
-}
 
-.letter-board .letter-group {
-  margin: 0 5px;
 }
 
 .letter-board .letter {
   position: relative;
   padding: 0 2px;
+
 }
 
 .active-letter::after {
