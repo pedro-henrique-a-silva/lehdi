@@ -113,6 +113,7 @@ header {
 
 .porpouse-section {
   color: #FAFAFF;
+  display: none;
   margin-top: 40px;
 }
 

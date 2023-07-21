@@ -66,4 +66,6 @@ window.onload = () => {
   const level = letterBoardLevels[0];
   creatLetterBoard(level);
   renderKeyBoard();
+  document.querySelector('.porpouse-section')
+    .style.display = 'block';
 };
