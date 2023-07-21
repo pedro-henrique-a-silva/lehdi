@@ -133,3 +133,17 @@ header {
   margin-bottom: 10px;
   margin-left: 10px;
 }
+
+.footer {
+  text-align: center;
+}
+
+.footer p {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.footer p a {
+  color: white;
+  text-decoration: none;
+}
