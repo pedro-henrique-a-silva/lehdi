@@ -36,6 +36,7 @@ document.querySelector('#instrucao')
   .addEventListener('click', openInstruction);
 
 document.addEventListener('keydown', (event) => {
+  event.preventDefault();
   const keyCode = nameOfKey(event.key);
 
   const tecla = document.querySelector(`#tecla-${keyCode}`);
@@ -53,6 +54,7 @@ document.addEventListener('keydown', (event) => {
 });
 
 document.addEventListener('keyup', (event) => {
+  event.preventDefault();
   const keyCode = event.key.replace(' ', 'space');
   const tecla = document.querySelector(`#tecla-${nameOfKey(keyCode)}`);
   if (tecla) {
